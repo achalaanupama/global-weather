@@ -1,0 +1,19 @@
+{
+  "name": "weather",
+  "connector": "soap",
+  "url": "http://localhost:8080/GlobalWeather",
+  "wsdl": "/Users/me712453/Projects/code-challenge/wsdl/global-weather.wsdl",
+  "remotingEnabled": true,
+  "operations": {
+    "GetWeather": {
+      "service": "GlobalWeather",
+      "port": "GlobalWeatherSoap",
+      "operation": "GetWeather"
+    },
+    "GetCitiesByCountry": {
+      "service": "GlobalWeather",
+      "port": "GlobalWeatherSoap",
+      "operation": "GetCitiesByCountry"
+    }
+  }
+}
