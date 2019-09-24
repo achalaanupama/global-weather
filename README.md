@@ -22,7 +22,7 @@ Finally I had to delete "dist" folder and rebuild to fix this issue.
 
 ### How to run locally
 
-1. Clone the global weather repo from [here](https://github.com/enablement-me/code-challenge)
+1. Clone the global weather repo [here](https://github.com/enablement-me/code-challenge)
 
 2. Run following command to run global weather SOAP service locally.
       ````
@@ -30,7 +30,7 @@ Finally I had to delete "dist" folder and rebuild to fix this issue.
       npm build
       npm start
       ````
-3. Clone weather REST API service from [here](https://github.com/achalaanupama/global-weather)
+3. Clone weather REST API service repo [here](https://github.com/achalaanupama/global-weather)
 4. Run following command to run it locally.
       ````
       npm install
