@@ -1,5 +1,5 @@
 import { inject } from '@loopback/core';
-import { get, param, HttpErrors } from '@loopback/rest';
+import { Request, RestBindings, get, param, ResponseObject, HttpErrors } from '@loopback/rest';
 import {
   GetWeatherResponse,
   GetCitiesByCountryResponse,
@@ -14,24 +14,26 @@ export class WeatherController {
     protected weather: Weather,
   ) { }
 
-  @get('/weather/city/{CityName}/country/{CountryName}')
-  async multiply(
-    @param.path.string('CityName') CityName: string,
-    @param.path.string('CountryName') CountryName: string,
+  @get('/weather/')
+  async getWeather(
+    @param.query.string('CityName') CityName: string,
+    @param.query.string('CountryName') CountryName: string,
   ): Promise<GetWeatherResponse> {
-    if (CountryName == "" || CityName == "") {
-      throw new HttpErrors.PreconditionFailed('Country Name and City is mandetory')
+    if (CountryName == null || CountryName == "") {
+      throw new HttpErrors.PreconditionFailed('Country name is mandetory')
+    } else if (CityName == null || CityName == "") {
+      throw new HttpErrors.PreconditionFailed('City name is mandetory')
     }
     return this.weather.GetWeather(<GetWeatherRequest>{
       CityName,
       CountryName,
     });
   }
-  @get('/weather/country/{CountryName}')
-  async add(
+  @get('/weather/cities/{CountryName}')
+  async getCities(
     @param.path.string('CountryName') CountryName: string,
   ): Promise<GetCitiesByCountryResponse> {
-    if (CountryName == "") {
+    if (CountryName == null || CountryName == "") {
       throw new HttpErrors.PreconditionFailed('Country name is mandetory')
     }
     return this.weather.GetCitiesByCountry(<GetCitiesByCountryRequest>{
