@@ -7,7 +7,7 @@ This is a RESTFul API developed using [LoopBack framework](http://loopback.io/) 
 ### Why LoopBack framework chosen for API?
 
 LoopBack is a highly extensible, open-source Node.js framework developed by developers which enables developers to quickly create APIs and microservices.
-It also provide many  connectors out-of-the-box for SOAP, REST, Databases, etc.
+It also provide many connectors out-of-the-box for SOAP, REST, Databases, etc.
 
 
 ### Challengers/issues that I face and how I resolve them
@@ -37,7 +37,13 @@ Finally I had to delete "dist" folder and rebuild to fix this issue.
       npm build
       npm start
       ````
-      Alternatively you can choose to run both global weather SOAP and REST API in Docker as well.
+      Alternatively you can choose to run in Docker as well.
+      ````
+      docker build -t weather .
+      docker run -p 3000:3000 -d weather
+      
+      ````
+      
 5. RESTFul Service can be access from http://localhost:3000/ in the browser which will provide Swagger Open API documentation.
 6. Services can be run as follows.
 http://localhost:3000/weather?CityName=MEL&CountryName=AU

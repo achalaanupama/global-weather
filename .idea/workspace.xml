@@ -19,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="705">
-                <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+              <first_editor relative-caret-position="135">
+                <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
               </first_editor>
               <second_editor />
             </state>
@@ -64,6 +64,11 @@
             <path>
               <item name="global-weather" type="b2602c69:ProjectViewProjectNode" />
               <item name="global-weather" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="global-weather" type="b2602c69:ProjectViewProjectNode" />
+              <item name="global-weather" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -136,8 +141,8 @@
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="705">
-            <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
           </first_editor>
           <second_editor />
         </state>
