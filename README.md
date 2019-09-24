@@ -17,7 +17,7 @@ over some other known frameworks and languages which I'm comfortable with.
 Therefore, I decided to try out the tutorials first after finish reading all the key concepts and features of the LoopBack framework.
 it really help me in quickly troubleshoot issues.
 
-The main issues I faced was, Once some of the recent code changes not reflected while in runtime. It wasn't fixed even after clean build as well.
+The main issues I faced was, Once some of the recent code changes were not reflected in runtime. It wasn't fixed even after clean build as well.
 Finally I had to delete "dist" folder and rebuild to fix this issue. 
 
 ### How to run locally
